@@ -21,8 +21,6 @@ const Form2 = ({ onBack, onNext }) => {
   const [focusedField, setFocusedField] = useState(null);
   const [formStarted, setFormStarted] = useState(false);
   const [showScholar, setShowScholar] = useState(true);
-
-  // Load previously submitted data from localStorage on mount
   useEffect(() => {
     const savedData = localStorage.getItem('currentStudentRegistration');
     if (savedData) {
