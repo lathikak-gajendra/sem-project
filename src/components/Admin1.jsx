@@ -117,7 +117,7 @@ function Admin1({ onLogout }) {
 
   return (
     <div className="admin-dashboard">
-      {/* Header */}
+      {}
       <div className="admin-header">
         <div className="admin-header-content">
           <h1>📊 Admin Dashboard</h1>
