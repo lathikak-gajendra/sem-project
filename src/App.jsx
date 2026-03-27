@@ -6,7 +6,7 @@ import Admin from './components/Admin'
 import Admin1 from './components/Admin1'
 
 function App() {
-  const [currentForm, setCurrentForm] = useState(2)
+  const [CurrentForm, setCurrentForm] = useState(2)
 
   const goToForm2 = () => {
     setCurrentForm(2)
@@ -47,10 +47,10 @@ function App() {
           Admin Login
         </button>
       </div>
-      {currentForm === 0 && <Admin onNavigateToForm1={goToForm1} onLoginSuccess={goToAdmin1} />}
-      {currentForm === 1 && <Form1 onNext={goToForm2} />}
-      {currentForm === 2 && <Form2 onNext={goToForm1} onBack={goToForm2} />}
-      {currentForm === 3 && <Admin1 onLogout={handleLogout} />}
+      {CurrentForm === 0 && <Admin onNavigateToForm1={goToForm1} onLoginSuccess={goToAdmin1} />}
+      {CurrentForm === 1 && <Form1 onNext={goToForm2} />}
+      {CurrentForm === 2 && <Form2 onNext={goToForm1} onBack={goToForm2} />}
+      {CurrentForm === 3 && <Admin1 onLogout={handleLogout} />}
 
     </>
   )
