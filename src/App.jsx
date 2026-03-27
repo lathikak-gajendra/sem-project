@@ -12,7 +12,7 @@ function App() {
     setCurrentForm(2)
   }
 
-  const goToForm1 = () => {
+  const GoToForm1 = () => {
     setCurrentForm(1)
   }
 
@@ -47,7 +47,7 @@ function App() {
           Admin Login
         </button>
       </div>
-      {CurrentForm === 0 && <Admin onNavigateToForm1={goToForm1} onLoginSuccess={goToAdmin1} />}
+      {CurrentForm === 0 && <Admin onNavigateToForm1={GoToForm1} onLoginSuccess={goToAdmin1} />}
       {CurrentForm === 1 && <Form1 onNext={goToForm2} />}
       {CurrentForm === 2 && <Form2 onNext={goToForm1} onBack={goToForm2} />}
       {CurrentForm === 3 && <Admin1 onLogout={handleLogout} />}
