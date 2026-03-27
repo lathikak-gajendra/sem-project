@@ -32,7 +32,6 @@ const Form2 = ({ onBack, onNext }) => {
         if (parsed.photoPreview) {
           setPhotoPreview(parsed.photoPreview);
         }
-        // Auto-start the form if data exists
         if (parsed.formData && Object.values(parsed.formData).some(val => val)) {
           setShowScholar(false);
           setTimeout(() => {
