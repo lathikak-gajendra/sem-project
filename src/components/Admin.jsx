@@ -110,7 +110,7 @@ function Admin({ onNavigateToForm1, onLoginSuccess }) {
               type="email"
               id="email"
               value={email}
-              onChange={(e) => setEmail(e.target.value)}
+              onChange={(u) => setEmail(u.target.value)}
               placeholder="Enter your email"
               required
               disabled={loading}
