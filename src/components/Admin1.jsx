@@ -27,7 +27,7 @@ function Admin1({ onLogout }) {
     setDisplayMode('profile');
   };
 
-  // Load course registrations
+  
   const handleViewCourses = () => {
     const courses = [];
     try {
