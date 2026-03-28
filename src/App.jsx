@@ -1,6 +1,5 @@
 import './App.css'
 import { useState } from 'react'
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Form1 from './components/Form1'
 import Form2 from './components/Form2'
 import Admin from './components/Admin'
@@ -52,12 +51,7 @@ function App() {
       {CurrentForm === 1 && <Form1 onNext={goToForm2} />}
       {CurrentForm === 2 && <Form2 onNext={goToForm1} onBack={goToForm2} />}
       {CurrentForm === 3 && <Admin1 onLogout={handleLogout} />}
-        /* { <BrowserRouter>
-             <Routes>
-                    <Route path="*" element={<NotFound />} />
-                 </Routes>
-         </BrowserRouter> }  */
-
+        
 
     </>
   )
