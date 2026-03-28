@@ -8,7 +8,7 @@ function Admin1({ onLogout }) {
   const [allProfiles, setAllProfiles] = useState([]);
   const [allCourses, setAllCourses] = useState([]);
 
-  // Load profile registrations
+ 
   const handleViewProfiles = () => {
     const profiles = [];
     try {
