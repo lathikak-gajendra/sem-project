@@ -9,8 +9,8 @@ function Admin({ onNavigateToForm1, onLoginSuccess }) {
   const [loading, setLoading] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+  const handleSubmit = async (u) => {
+    u.preventDefault();
     setError('');
     setSuccess('');
     setLoading(true);
