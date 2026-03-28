@@ -57,7 +57,7 @@ function Admin1({ onLogout }) {
     }
   };
 
-  // Delete a course registration by index and update localStorage
+  
   const handleDeleteCourse = (deleteIndex) => {
     try {
       const updated = allCourses.filter((_, idx) => idx !== deleteIndex);
