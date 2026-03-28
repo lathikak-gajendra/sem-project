@@ -46,7 +46,7 @@ function Admin1({ onLogout }) {
     setDisplayMode('courses');
   };
 
-  // Delete a profile by index and update localStorage
+
   const handleDeleteProfile = (deleteIndex) => {
     try {
       const updated = allProfiles.filter((_, idx) => idx !== deleteIndex);
