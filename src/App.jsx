@@ -52,11 +52,11 @@ function App() {
       {CurrentForm === 1 && <Form1 onNext={goToForm2} />}
       {CurrentForm === 2 && <Form2 onNext={goToForm1} onBack={goToForm2} />}
       {CurrentForm === 3 && <Admin1 onLogout={handleLogout} />}
-        { <BrowserRouter>
+        /* { <BrowserRouter>
              <Routes>
                     <Route path="*" element={<NotFound />} />
                  </Routes>
-         </BrowserRouter> } 
+         </BrowserRouter> }  */
 
 
     </>
