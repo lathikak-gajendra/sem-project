@@ -22,7 +22,7 @@ function Admin({ onNavigateToForm1, onLoginSuccess }) {
     };
 
     try {
-      // Check if credentials match test credentials
+      
       if (email === TEST_CREDENTIALS.email && password === TEST_CREDENTIALS.password) {
         setSuccess('Login successful!');
         setEmail('');
